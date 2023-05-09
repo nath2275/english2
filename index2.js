@@ -1030,7 +1030,7 @@ const typeArray = typeof(data[2].thai)
 
 function checkEN(){
     
-    if(input.value === data[Rank].eng){
+    if(input.value.toUpperCase() === data[Rank].eng.toUpperCase()){
         Rank += 1
 
         if(Rank > max ){Rank = min}
